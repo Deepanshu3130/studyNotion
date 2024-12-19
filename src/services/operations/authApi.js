@@ -2,6 +2,7 @@ import  {toast} from "react-hot-toast";
 import { setLoading, setToken } from "../../slices/authSlice"
 import { setUser } from "../../slices/profileSlice"
 import { apiConnector } from "../apiConnector"
+import { resetCart } from "../../slices/cartSlice";
 
 import { endpoints } from "../api";
 
