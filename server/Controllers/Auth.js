@@ -18,7 +18,7 @@ exports.sendOtp = async(req, res)=>{
         if(user){
             return res.status(401).json({
                 success:false,
-                messange:"user already present plaese login "
+                message:"user already present plaese login "
             })
         }
 

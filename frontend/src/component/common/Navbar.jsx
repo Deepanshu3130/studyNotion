@@ -138,7 +138,7 @@ function Navbar() {
         <div className="md:hidden absolute top-14 left-0 right-0 bg-richblack-800 z-50 border-b border-richblack-700">
           <ul className="flex flex-col text-richblack-25">
 
-          {token === null ? (
+          {/* {token === null ? (
                 <div className="flex flex-row gap-3 mt-3">
                   <Link 
                     to="/login" 
@@ -162,7 +162,7 @@ function Navbar() {
                   </span></div>
                  
                 </div>
-              )}
+              )} */}
             {NavbarLinks.map((link, index) => (
               <li key={index} className="border-b border-richblack-700">
                 {link.title === "Catalog" ? (
