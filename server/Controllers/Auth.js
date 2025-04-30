@@ -103,7 +103,7 @@ exports.signUp = async(req, res)=>{
         const recentOtp = await Otp.find({ email }).sort({ createdAt: -1 }).limit(1); // look into this 
         const response= recentOtp[0];
         //validate otp 
-        console.log("otp is ",recentOtp)
+        //console.log("otp is ",recentOtp)
 
         if(recentOtp.length==0){
             //otp not found
@@ -140,7 +140,7 @@ exports.signUp = async(req, res)=>{
             confirmPassword, accountType,additionalDetails:additionalDetails._id,  otp , image:`https://api.dicebear.com/5.x/initials/svg?seed=${firstName} ${lastName}`  // save this api for avatr 
 
         })
-        console.log(hashPass)
+        //console.log(hashPass)
         //return res
         return res.status(200).json({
             success:true,

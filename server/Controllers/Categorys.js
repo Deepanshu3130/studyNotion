@@ -88,11 +88,11 @@ exports.categoryPageDetails= async(req, res)=>{
 				message: "No courses found for the selected category.",
 			});
 		}
-        const selectedCourses = selectedCategory.course
+        const selectedCourses = selectedCategory.course.filter((course) => course.status === "Published");
         //get courses for different categories
         const differentCategories= await Category.find({
                                         _id:{$ne:categoryId},
-        })  .populate({path: "course" , populate:([{path:"instructor"}])})
+        })  .populate({path: "course", match:{status:"Published"} , populate:([{path:"instructor"}])})
         .exec()
 
        const differentCourses = differentCategories.flatMap((category)=> category.course)

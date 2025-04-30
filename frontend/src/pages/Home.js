@@ -9,10 +9,13 @@ import TimelineSection from '../component/core/Homepage/TimelineSection'
 import LearningLanguageSection from '../component/core/Homepage/LearningLanguageSection'
 import InstructorSection from "../component/core/Homepage/InstructorSection"
 import Exploremore from '../component/core/Homepage/Exploremore'
+import DesktopModeModal from '../component/common/DestopModal'
 
 function Home() {
   return (
     <div >
+      {/* Desktop Modal */}
+      <DesktopModeModal></DesktopModeModal>
         {/* section1 */}
         <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white">
             <Link to={"/signup"}>

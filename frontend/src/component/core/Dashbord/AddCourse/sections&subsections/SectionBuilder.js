@@ -36,7 +36,7 @@ function SectionBuilder() {
             dispatch(setStep(3))
 
         }else{
-            toast.error("Please add atleast one lesson to esch section");
+            toast.error("Please add atleast two sections to continue")  ;
 
         }
        }else{

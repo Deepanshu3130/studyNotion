@@ -57,5 +57,7 @@ const course = new mongoose.Schema({
 		enum: ["Draft", "Published"],
 	},
 
-}); 
+},
+{ timestamps: true }
+);
 module.exports = mongoose.model("Course", course)

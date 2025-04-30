@@ -2,8 +2,8 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
 exports.auth = async (req, res, next) => {
-    console.log("call in the auth middleware");
-    console.log(req.body);
+    // console.log("call in the auth middleware");
+    // console.log(req.body);
    // console.log("token in backend is " , req.header("Authorization").replace("Bearer ", "") )
     try{
         //extract token
@@ -14,7 +14,7 @@ exports.auth = async (req, res, next) => {
                         
 
                         // Log specific headers like Authorization
-                        console.log('Authorization Header:', req.headers.authorization);
+                        //console.log('Authorization Header:', req.headers.authorization);
                       
         //if token missing, then return response
         if(!token) {

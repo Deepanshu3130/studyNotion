@@ -1,31 +1,109 @@
-# React & Tailwind CSS Starter Pack
+StudyNotion - README
+Overview
+EdTech is a comprehensive online learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) that enables instructors to create and manage courses while allowing students to discover, purchase, and learn from these courses. The platform features complete authentication and authorization systems, course management tools, payment integration, and a rich learning interface.
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+Key Features
+For Students:
+User registration and profile management
 
-## Usage
+Course browsing and searching
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+Course purchasing with payment integration
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+Interactive learning dashboard
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+Progress tracking
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+Course reviews and ratings
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+For Instructors:
+Instructor registration and verification
 
-## Contributing
+Course creation and management
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+Section and lesson organization
+
+Multimedia content upload
+
+Student enrollment tracking
+
+Revenue dashboard
+
+Technical Features:
+JWT-based authentication
+
+Role-based authorization (Student/Instructor/Admin)
+
+Redux for state management
+
+Responsive UI with Tailwind CSS
+
+Secure payment processing
+
+File upload capabilities
+
+RESTful API architecture
+
+Technologies Used
+Frontend:
+React.js
+
+Redux (State Management)
+
+React Router (Routing)
+
+Tailwind CSS (Styling)
+
+Axios (HTTP Client)
+
+Formik & Yup (Form Handling)
+
+Various React Icons
+
+Backend:
+Node.js
+
+Express.js
+
+MongoDB (Database)
+
+Mongoose (ODM)
+
+JSON Web Tokens (Authentication)
+
+Bcrypt (Password Hashing)
+
+Multer (File Uploads)
+
+Nodemailer (Email Services)
+
+Payment Integration:
+Razorpay API
+
+Installation
+Prerequisites:
+Node.js (v14 or later)
+
+MongoDB (v4.4 or later)
+
+npm or yarn
+
+Backend Setup:
+Clone the repository
+
+Navigate to the backend directory: cd backend
+
+Install dependencies: npm install
+
+Create a .env file based on .env.example
+
+Start the server: npm run dev
+
+Frontend Setup:
+Navigate to the frontend directory: cd frontend
+
+Install dependencies: npm install
+
+Create a .env file based on .env.example
+
+Start the development server: npm start
