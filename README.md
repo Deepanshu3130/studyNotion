@@ -1,109 +1,78 @@
-StudyNotion - README
-Overview
-EdTech is a comprehensive online learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) that enables instructors to create and manage courses while allowing students to discover, purchase, and learn from these courses. The platform features complete authentication and authorization systems, course management tools, payment integration, and a rich learning interface.
+📚 EdTech - Online Learning Platform
+EdTech Platform Screenshot
+(Replace with actual screenshot)
 
-Key Features
-For Students:
-User registration and profile management
+🌟 Overview
+EdTech is a full-featured online learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) that enables:
 
-Course browsing and searching
+Instructors to create and manage courses
 
-Course purchasing with payment integration
+Students to discover, purchase, and learn from courses
 
-Interactive learning dashboard
+Admins to oversee platform operations
 
-Progress tracking
+The platform features complete authentication, role-based access control, payment integration, and a rich course management system.
 
-Course reviews and ratings
+🚀 Live Demo
+Demo
+(Add your actual deployment link)
 
-For Instructors:
-Instructor registration and verification
+✨ Key Features
+👨‍🎓 For Students
+🔐 Secure authentication and profile management
 
-Course creation and management
+🔍 Course browsing with search and filtering
 
-Section and lesson organization
+🛒 Course purchasing with Razorpay integration
 
-Multimedia content upload
+📊 Interactive learning dashboard with progress tracking
 
-Student enrollment tracking
+⭐ Course reviews and rating system
 
-Revenue dashboard
+👨‍🏫 For Instructors
+🏫 Course creation and management tools
 
-Technical Features:
-JWT-based authentication
+📝 Section and lesson organization
 
-Role-based authorization (Student/Instructor/Admin)
+🎥 Multimedia content upload (videos, PDFs, etc.)
 
-Redux for state management
+📈 Student enrollment analytics
 
-Responsive UI with Tailwind CSS
+💰 Revenue dashboard
 
-Secure payment processing
+⚙️ Technical Highlights
+🔑 JWT-based authentication
 
-File upload capabilities
+🛡️ Role-based authorization (Student/Instructor/Admin)
 
-RESTful API architecture
+🔄 Redux for state management
 
-Technologies Used
-Frontend:
-React.js
+📱 Responsive UI with Tailwind CSS
 
-Redux (State Management)
+💳 Secure payment processing
 
-React Router (Routing)
+☁️ Cloudinary integration for media storage
 
-Tailwind CSS (Styling)
+🛠️ Tech Stack
+Frontend
+React
+Redux
+Tailwind CSS
+React Router
 
-Axios (HTTP Client)
-
-Formik & Yup (Form Handling)
-
-Various React Icons
-
-Backend:
+Backend
 Node.js
-
 Express.js
+MongoDB
 
-MongoDB (Database)
+Services
+Razorpay
+Cloudinary
 
-Mongoose (ODM)
-
-JSON Web Tokens (Authentication)
-
-Bcrypt (Password Hashing)
-
-Multer (File Uploads)
-
-Nodemailer (Email Services)
-
-Payment Integration:
-Razorpay API
-
-Installation
-Prerequisites:
+🚀 Getting Started
+Prerequisites
 Node.js (v14 or later)
 
 MongoDB (v4.4 or later)
 
 npm or yarn
-
-Backend Setup:
-Clone the repository
-
-Navigate to the backend directory: cd backend
-
-Install dependencies: npm install
-
-Create a .env file based on .env.example
-
-Start the server: npm run dev
-
-Frontend Setup:
-Navigate to the frontend directory: cd frontend
-
-Install dependencies: npm install
-
-Create a .env file based on .env.example
-
-Start the development server: npm start
