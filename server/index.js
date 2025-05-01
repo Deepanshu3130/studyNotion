@@ -12,6 +12,7 @@ const {cloudinaryConnect } = require("./config/cloudinay");
 const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 
 
 
@@ -49,14 +50,22 @@ app.use("/api/v1/course", courseRoutes);
 app.use("/api/v1/payment", paymentRoutes);
 // app.use("/api/v1/reach", contactUsRoute);
 
+if(process.env.NODE_ENV === 'production') {
+	app.use(express.static(path.join(__dirname, '../frontend/build')));
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));	
+	});	
+}
+
+
 //def route
 
-app.get("/", (req, res) => {
-	return res.json({
-		success:true,
-		message:'Your server is up and running....'
-	});
-});
+// app.get("/", (req, res) => {
+// 	return res.json({
+// 		success:true,
+// 		message:'Your server is up and running....'
+// 	});
+// });
 
 app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)

@@ -30,6 +30,7 @@
     "react-type-animation": "^3.2.0",
     "router-dom": "^2.2.11",
     "skeleton": "^0.1.2",
+    "studynotion": "file:..",
     "swiper": "^11.1.14",
     "video-react": "^0.16.0",
     "web-vitals": "^2.1.4"
@@ -46,7 +47,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
-
   },
   "eslintConfig": {
     "extends": [

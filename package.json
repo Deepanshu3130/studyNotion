@@ -1,0 +1,13 @@
+{
+  "name": "studynotion",
+  "version": "1.0.0",
+  "description": "📚 EdTech - Online Learning Platform\r EdTech Platform Screenshot\r (Replace with actual screenshot)",
+  "main": "index.js",
+  "scripts": {
+    "build":"npm install --prefix server && npm install --prefix frontend && npm run build --prefix frontend", 
+    "start" : "npm run start --prefix server" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

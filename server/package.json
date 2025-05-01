@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +25,7 @@
     "opt": "^0.1.14",
     "otp": "^1.1.2",
     "otp-generator": "^4.0.1",
-    "razorpay": "^2.9.3"
+    "razorpay": "^2.9.3",
+    "studynotion": "file:.."
   }
 }
