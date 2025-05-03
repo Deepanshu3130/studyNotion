@@ -21,7 +21,7 @@ exports.resetPasswordToken= async(req, res)=>{
     const updateDetails = await User.findOneAndUpdate({email}, {token:token,
     resetPassExpires:Date.now()+ 5*60*1000}, {new:true})
     //create the url
-    const url= `http://localhost:3000/update-password/${token}`
+    const url= `https://studynotion-3vn2.onrender.com/update-password/${token}`
     //send mail containing the url
     await mailSender(email, "Password Reset Link", `password Reset Link:${url}`);
     //return the response

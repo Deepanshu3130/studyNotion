@@ -27,6 +27,7 @@ import OpenRoute from "./component/core/auth/OpenRoute";
 import CourseDetails from "./pages/CourseDetails";
 import ViewCourse from "./pages/ViewCourse";
 import VideoDetails from "./component/core/viewcourse/VideoDetails";
+import Footer from "./component/common/Footer";
 
 function App() {
   const navigate= useNavigate();
@@ -121,6 +122,8 @@ function App() {
           )}
         </Route>
     </Routes>
+
+    <Footer></Footer>
 
           </div>
         
