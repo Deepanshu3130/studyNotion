@@ -43,11 +43,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> _Include here if you have any screenshots or demo gifs of your app._
-
----
 
 ## 🧑‍💻 Getting Started
 
