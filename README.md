@@ -53,6 +53,60 @@
 
 ### 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/your-username/studyNotion.git
 cd studyNotion
+```
+
+### 2. Install dependencies
+For both client and server:
+```
+ cd frontend
+  npm install
+cd server
+ npm install
+```
+### 3. Set up environment variables
+Create a .env file in the server folder with the following:
+```
+MAIL_HOST=smtp.gmail.com
+MAIL_USER=Your email id
+MAIL_PASS=find it form google
+CORS_ORIGIN = ["http://localhost:3000"]
+
+
+JWT_SECRET="your secret"
+FOLDER_NAME="your cloudinary folder name"
+
+RAZORPAY_KEY=""
+RAZORPAY_SECRET=""
+
+
+PORT = 4000
+database_url= your db url
+
+CLOUD_NAME="your cloudinary name "
+API_KEY="cloudinary =api key"
+API_SECRET="cloudinary secret key"
+```
+### 4. Run the application
+```
+# start backend
+cd server
+node index.js
+#start frontend
+cd frontend 
+npm start
+```
+
+📢 Notes
+Razorpay is currently in test mode, use test card details provided by Razorpay documentation.
+
+Only authenticated users can access dashboards.
+
+Role-based components ensure students and instructors have separate views and controls.
+
+🤝 Contributing
+Feel free to fork this repository and contribute. Pull requests are welcome!
+
+
