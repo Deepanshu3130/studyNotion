@@ -1,6 +1,11 @@
 # 🎓 StudyNotion
 
 **StudyNotion** is a full-featured EdTech platform that enables users to register as **students** or **instructors**. Students can browse and purchase courses, while instructors can create and publish their own. The platform includes secure authentication, payment integration, and robust state management.
+📧 Email Notice:
+If you don't see the verification or notification email in your inbox, please check your Spam or Junk folder.
+To avoid this in the future, mark the email as "Not Spam."
+
+
 
 ---
 
