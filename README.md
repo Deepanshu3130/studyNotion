@@ -1,78 +1,58 @@
-📚 EdTech - Online Learning Platform
-EdTech Platform Screenshot
-(Replace with actual screenshot)
+# 🎓 StudyNotion
 
-🌟 Overview
-EdTech is a full-featured online learning platform built with the MERN stack (MongoDB, Express.js, React, Node.js) that enables:
+**StudyNotion** is a full-featured EdTech platform that enables users to register as **students** or **instructors**. Students can browse and purchase courses, while instructors can create and publish their own. The platform includes secure authentication, payment integration, and robust state management.
 
-Instructors to create and manage courses
+---
 
-Students to discover, purchase, and learn from courses
+## 🚀 Features
 
-Admins to oversee platform operations
+### 👨‍🏫 Instructor
+- Create, edit, and manage courses
+- Upload course content (videos, descriptions, prices)
+- Publish courses to the platform
 
-The platform features complete authentication, role-based access control, payment integration, and a rich course management system.
+### 🎓 Student
+- Browse available courses
+- Purchase courses via Razorpay (test mode)
+- View enrolled courses and track progress
 
-🚀 Live Demo
-Demo
-(Add your actual deployment link)
+### 🔐 Authentication
+- JWT-based login and registration
+- Role-based access for students and instructors
+- Password hashing and security best practices
 
-✨ Key Features
-👨‍🎓 For Students
-🔐 Secure authentication and profile management
+### 💳 Payments
+- Integrated with **Razorpay** for handling payments (currently in **test mode**)
 
-🔍 Course browsing with search and filtering
+### 🧠 State Management
+- Implemented using **Redux Toolkit** for seamless state updates and global state sharing
 
-🛒 Course purchasing with Razorpay integration
+---
 
-📊 Interactive learning dashboard with progress tracking
+## 🛠 Tech Stack
 
-⭐ Course reviews and rating system
+| Tech             | Description                                  |
+|------------------|----------------------------------------------|
+| **Frontend**     | React.js, TailwindCSS, Redux Toolkit         |
+| **Backend**      | Node.js, Express.js                          |
+| **Database**     | MongoDB + Mongoose                           |
+| **Authentication** | JWT, Bcrypt                                |
+| **Payments**     | Razorpay (test mode)                         |
+| **State Mgmt.**  | Redux                                        |
+| **Others**       | Cloudinary (for media), dotenv, cors         |
 
-👨‍🏫 For Instructors
-🏫 Course creation and management tools
+---
 
-📝 Section and lesson organization
+## 📸 Screenshots
 
-🎥 Multimedia content upload (videos, PDFs, etc.)
+> _Include here if you have any screenshots or demo gifs of your app._
 
-📈 Student enrollment analytics
+---
 
-💰 Revenue dashboard
+## 🧑‍💻 Getting Started
 
-⚙️ Technical Highlights
-🔑 JWT-based authentication
+### 1. Clone the repository
 
-🛡️ Role-based authorization (Student/Instructor/Admin)
-
-🔄 Redux for state management
-
-📱 Responsive UI with Tailwind CSS
-
-💳 Secure payment processing
-
-☁️ Cloudinary integration for media storage
-
-🛠️ Tech Stack
-Frontend
-React
-Redux
-Tailwind CSS
-React Router
-
-Backend
-Node.js
-Express.js
-MongoDB
-
-Services
-Razorpay
-Cloudinary
-
-🚀 Getting Started
-Prerequisites
-Node.js (v14 or later)
-
-MongoDB (v4.4 or later)
-
-npm or yarn
+```bash
+git clone https://github.com/your-username/studyNotion.git
+cd studyNotion
