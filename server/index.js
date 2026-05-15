@@ -50,12 +50,12 @@ app.use("/api/v1/course", courseRoutes);
 app.use("/api/v1/payment", paymentRoutes);
 // app.use("/api/v1/reach", contactUsRoute);
 
-if(process.env.NODE_ENV === 'production') {
-	app.use(express.static(path.join(__dirname, '../frontend/build')));
-	app.get('*', (req, res) => {
-		res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));	
-	});	
-}
+// if(process.env.NODE_ENV === 'production') {
+// 	app.use(express.static(path.join(__dirname, '../frontend/build')));
+// 	app.get('*', (req, res) => {
+// 		res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));	
+// 	});	
+// }
 
 
 //def route
