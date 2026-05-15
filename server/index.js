@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://studynotion1-c24e.onrender.com/",
+		origin:"https://studynotion1-c24e.onrender.com",
 		credentials:true,
 		maxAge: 14400,
 		allowedHeaders: ['Authorization', 'Content-Type'],
