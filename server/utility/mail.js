@@ -30,14 +30,18 @@ const nodemailer = require("nodemailer");
 const mailSender = async (email, title, body) => {
   try {
     console.log("Creating transporter...");
-
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
+const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,
-      },
-    });
+    },
+    connectionTimeout: 30000,
+    greetingTimeout: 30000,
+    socketTimeout: 30000,
+});
 
     console.log("Verifying SMTP connection...");
     await transporter.verify();
