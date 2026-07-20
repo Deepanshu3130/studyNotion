@@ -48,12 +48,12 @@ const transporter = nodemailer.createTransport({
 
     console.log("SMTP verified");
 
-    const info = await transporter.sendMail({
-      from: process.env.MAIL_USER,
-      to: email,
-      subject: title,
-      html: body,
-    });
+const info = await transporter.sendMail({
+  from: process.env.MAIL_USER,
+  to: process.env.MAIL_USER,
+  subject: "Test",
+  text: "Hello",
+});
 
     console.log("Mail sent:", info.messageId);
     return info;
